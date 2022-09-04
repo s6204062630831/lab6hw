@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body >
+<div id="myform">
+
+<table>
+    <tr>
+        <td>ชื่อลูกค้า :</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>ทีอยู่ :</td>
+        <td><input type="text" id="age">
+        </tr>
+    <tr>
+        <td>โทรศัพ :</td>
+        <td><input type="text" id="phone">   
+        </tr>     
+        <tr>
+        <td><input type="button" id="add" value="เพิ่ม" onclick="addRow()"></td>
+    </tr>
+
+</table>
+</div>
+<div id="mydata">
+
+<table id="myTableData"  border="1" >
+    <tr>
+        <td><b>ชื่อลูกค้า</b></td>
+        <td><b>ที่อยู่</b></td>
+        <td><b>โทรศัพท์</b></td>
+    </tr>
+</table>
+
+</div>
+
+</body>
+</html>
+<script>
+function addRow() {          
+    var myName = document.getElementById("name");
+    var age = document.getElementById("age");
+    var phone = document.getElementById("phone")
+    var table = document.getElementById("myTableData");
+ 
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+  
+    row.insertCell(0).innerHTML= myName.value;
+    row.insertCell(1).innerHTML= age.value;
+    row.insertCell(2).innerHTML= phone.value;
+ 
+}
+</script>

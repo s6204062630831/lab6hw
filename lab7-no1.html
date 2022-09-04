@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+function cal1() {
+    var number1 = document.getElementById("num1");
+        var number2 = document.getElementById("num2");
+        var result = document.getElementById("result");
+        var s = parseInt(number1.value) + parseInt(number2.value); 
+        result.value = s;
+
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" id="num1"> + <input type="text" id="num2"> =
+
+<input type="text" id="result">
+<input type="button" id="addButton" value="Gogo" onclick="cal1()">
+</form>
+<ul id="playlist">
+</ul>
+</body>
+</html>
