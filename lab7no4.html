@@ -1,16 +1,17 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script>
-
-function CountTheWorld(str) {
-    let number = x.length;
-var x=document.getElementById("demo").innerHTML = number;
-}
-
-</script>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <script>
+        function countTheWord(str){
+          let count = str.split("the").length
+          alert("มี The ทั้งหมด " +count+" คำ")
+        }
+        </script>
 </head>
 <body>
-The eigth ruler of the Fifth Dynasty in the late 25 th century. <br><br>
-<a href="a" oneclick="CountTheWorld('The eigth ruler of the Fifth Dynasty in the late 25 th century.')">Click for Count 'the'</a>
-
-</body></html>
+     The eighth ruler of the Fifth Dynasty in the late 25th century.<br><br>
+     <a href="#" onclick="countTheWord('The eighth ruler of the Fifth Dynasty in the late 25th century')">
+     Click for count 'the'</a>
+</body>
+</html>
